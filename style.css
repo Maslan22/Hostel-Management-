@@ -1,0 +1,415 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+ padding: 0;
+    font-family: Century Gothic;
+;
+    box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+.header{
+     width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(Images/pic.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.container{
+     max-width: 90%;
+  margin: auto;
+   
+}
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top {
+  margin-top: 80px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+.mtop {
+  margin-top: 40px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h5 {
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #CC8C18;
+  padding-top: 20px;
+}
+
+.heading h2 {
+  color: #24416B;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+
+.left, .right {
+  width: 50%;
+}
+.content flex  top{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+button {
+  background:  #CC8C18;
+  color: white;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+    cursor: pointer;
+}
+button:hover{
+    background:#eee; 
+    color: black;
+}
+
+button i {
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+button span {
+  margin-top: 5px;
+}
+
+h3 {
+  font-size: 35px;
+  font-family: serif;
+  color: #24416B;
+  margin-bottom: 20px;
+}
+
+.about .left {
+  padding: 50px;
+}
+
+p {
+  line-height: 30px;
+  color: #a4a4a4;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.about {
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.about .right {
+  position: relative;
+}
+
+.about .right::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #CC8C18;
+  width: 92%;
+  height: 61vh;
+  z-index: -1;
+  margin: 50px;
+}
+
+.about::after {
+  content: '';
+  position: absolute;
+  top: -3%;
+  left: 0;
+  background-image: url("images/line1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100%;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  bottom: -3%;
+  left: 0;
+  background-image: url("images/line2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100%;
+}
+nav img{
+
+    width: 15%;
+    padding-top: 20px;
+    padding-left: 20px;
+    
+    
+    
+    
+}
+
+nav{
+   display: flex; 
+    padding: 1px;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+    
+        
+        
+}
+.nav-links{
+    flex:1;
+    text-align: right; 
+ 
+   
+    
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 35px;
+  
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+   
+    
+}
+.nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background:#CC8C18;
+    transition: 0.2s;
+}
+.nav-links ul li :hover::after{
+    width: 100%;
+    
+}
+.text-box{
+    text-align: left;
+    color: white;
+    padding: 140px;
+    font-size: 50px;
+    
+}
+.text-box h1{
+    font-size: 70px;
+    font-weight: 600px;
+    color: #CC8C18;
+
+    
+   
+}
+.text-box p{
+    font-size: 20px;
+   
+}
+.hero-btn{
+    display: inline-block;
+     text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-size: 17px;
+    
+    
+}
+.hero-btn:hover{
+    border:1px #030326;
+    background: #CC8C18;
+    transition: 1s;
+}
+
+.room {
+  margin-bottom: 50px;
+  position: relative;
+    
+}
+
+.room.wrapper2::after {
+  display: none;
+  top: 105%;
+  background-image: url("images/line2.png");
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.room img {
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.room h3 {
+  margin: 0;
+  padding: 0;
+}
+/*------------wrapper------------*/
+
+
+
+/*------------wrapper2------------*/
+.wrapper2 {
+  position: relative;
+  text-align: center;
+
+}
+
+.wrapper2 .grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.wrapper2 .box {
+  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.wrapper2 i {
+  margin: 10px 0 15px 0;
+  color: #CC8C18;
+  font-size: 30px;
+}
+
+.wrapper2 h3 {
+  font-size: 20px;
+}
+
+.wrapper2 span {
+  padding: 10px;
+  background: #F5E8D1;
+  color: #CC8C18;
+  border-radius: 50%;
+}
+
+.wrapper2 .box:hover {
+  background: #CC8C18;
+  cursor: pointer;
+}
+
+.wrapper2 .box:hover span {
+  background: #fff;
+}
+
+.wrapper2 .box:hover p,
+.wrapper2 .box:hover h3,
+.wrapper2 .box:hover i {
+  color: white;
+}
+
+
+
+/*------------wrapper2------------*/
+
+/*------------room------------*/
+
+
+
+
+/*------------footer------------*/
+footer {
+  background:#030326;
+  color: white;
+  padding: 30px;
+}
+
+.subscribe {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+}
+
+.subscribe input {
+  width: 100%;
+  border-radius: 50px;
+  margin-right: 30px;
+  padding: 10px;
+}
+
+footer .grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer .content h2 {
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+footer li {
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+footer li i {
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+footer .content h3 {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+
+footer .content .icon i {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+footer .social i {
+  padding: 10px;
+  background: grey;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+footer .content {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
