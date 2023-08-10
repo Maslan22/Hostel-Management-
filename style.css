@@ -2,23 +2,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 /* For screens with a width up to 600px */
-@media (max-width: 600px) {
-    /* Add responsive styling here */
+/* Mobile-first responsive design */
+
+/* Adjust font sizes, margins, paddings, and other styles for smaller screens */
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+  /* Adjust styles for tablets */
+  
+  /* Example: Increase font sizes, adjust paddings, margins, etc. */
+  
+  /* Update layout for larger screens */
+  .container {
+    max-width: 80%; /* You can adjust this as needed */
+  }
+  
+  /* Adjust grid layouts, columns, etc. */
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-/* For screens with a width between 601px and 1024px */
-@media (min-width: 601px) and (max-width: 1024px) {
-    /* Add responsive styling here */
+/* Media query for desktop screens */
+@media (min-width: 1024px) {
+  /* Adjust styles for larger screens */
+  
+  /* Example: Increase font sizes, adjust paddings, margins, etc. */
+  
+  /* Update layout for larger screens */
+  .container {
+    max-width: 70%; /* You can adjust this as needed */
+  }
+  
+  /* Adjust grid layouts, columns, etc. */
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-/* For screens with a width greater than 1024px */
-@media (min-width: 1025px) {
-    /* Add responsive styling here */
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 
 
